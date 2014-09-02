@@ -1,0 +1,30 @@
+{
+  "name": "multi-map",
+  "version": "0.1.0",
+  "description": "A multimap with optional type safety",
+  "main": "multimap.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmaelzer/multimap"
+  },
+  "keywords": [
+    "multimap",
+    "map"
+  ],
+  "author": "Mike Maelzer <mmaelzer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmaelzer/multimap/issues"
+  },
+  "homepage": "https://github.com/mmaelzer/multimap",
+  "dependencies": {
+    "surely": "^0.1.3",
+    "deep-equal": "~0.2.1"
+  },
+  "devDependencies": {
+    "tape": "~2.14.0"
+  }
+}
