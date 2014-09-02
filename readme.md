@@ -19,24 +19,34 @@ var MultiMap = require('multi-map');
 // Create a multimap with number keys and string values
 var multimap = new MultiMap('number', 'string');
 
+
+// -- add values ---
 multimap.add(30, 'foo');
 multimap.add(30, 'bar');
 multimap.add(45, 'baz');
 
+
+// -- type checking --
 var result = multimap.add('33', 'thirtythree');
 console.log(result);
 // [TypeError: Expected number for 'key']
 
+
+// -- get values --
 var getValue = multimap.get(30);
 
 console.log(getValue);
 // ['foo', 'bar']
 
+
+// -- get values in range --
 var rangeValues = multimap.range(0, 100);
 
 console.log(rangeValues);
 // ['foo', 'bar', 'baz']
 
+
+// -- remove --
 multimap.remove(30);
 
 console.log(multimap.range(0, 100));
