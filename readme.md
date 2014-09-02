@@ -3,6 +3,8 @@ multi-map
 
 A multimap implementation that optionally allows type enforcement via [surely](https://github.com/mmaelzer/surely).
 
+[![build status](https://secure.travis-ci.org/mmaelzer/multi-map.png)](http://travis-ci.org/mmaelzer/multi-map)
+
 ### Install
 ```javascript
 npm install multi-map
